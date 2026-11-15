@@ -1,0 +1,17 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      allratesApiKey:
+        type: string
+        title: AllRatesToday API key
+        description: Free key from https://allratestoday.com/register (format art_live_xxxxx). Needed for live bank rates; the bank finder works without it.
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'bank-exchange-rates-mcp'],
+      env: config.allratesApiKey ? { ALLRATES_API_KEY: config.allratesApiKey } : {}
+    })
+  exampleConfig:
+    allratesApiKey: art_live_xxxxxxxxxxxxxxxxxxxxxxxx

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.allratestoday/bank-exchange-rates-mcp",
+  "title": "Bank Exchange Rates (AllRatesToday)",
+  "description": "Live buy and sell rates from 1,219 commercial banks in 124 countries, with spread and official rate.",
+  "repository": { "url": "https://github.com/AllRates-Today/bank-exchange-rates-mcp", "source": "github" },
+  "websiteUrl": "https://allratestoday.com/bank-exchange-rate-api/",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "bank-exchange-rates-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "ALLRATES_API_KEY", "description": "AllRatesToday API key (free key works: https://allratestoday.com/register). Without it only the bank finder tools and request_trial_key work.", "isRequired": false, "isSecret": true },
+        { "name": "ALLRATES_BASE_URL", "description": "Override API host (default: https://allratestoday.com).", "isRequired": false }
+      ]
+    }
+  ]
+}

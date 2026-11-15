@@ -1,0 +1,65 @@
+{
+  "name": "bank-exchange-rates-mcp",
+  "version": "1.0.0",
+  "mcpName": "com.allratestoday/bank-exchange-rates-mcp",
+  "description": "MCP server for bank exchange rates: let Claude, Cursor and other AI agents fetch live buy and sell rates from 1,219 commercial banks in 124 countries (TT, cash and card boards), compare banks, and check spreads against the official central bank rate.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "ai-agent",
+    "bank exchange rates",
+    "bank exchange rate",
+    "bank exchange rate api",
+    "bank rates",
+    "commercial bank rates",
+    "buying rate",
+    "selling rate",
+    "buy sell rate",
+    "forex rates",
+    "tt rate",
+    "remittance rates",
+    "exchange rate today",
+    "exchange-rate",
+    "exchangerate",
+    "exchange rate",
+    "exchange rates",
+    "currency",
+    "currency-api",
+    "forex",
+    "fx",
+    "allratestoday"
+  ],
+  "license": "MIT",
+  "author": "AllRatesToday <https://allratestoday.com>",
+  "homepage": "https://allratestoday.com/bank-exchange-rate-api/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/bank-exchange-rates-mcp.git"
+  },
+  "bugs": "https://github.com/AllRates-Today/bank-exchange-rates-mcp/issues",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bank-exchange-rates-mcp": "dist/index.js"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "bank-exchange-rates": "^1.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
