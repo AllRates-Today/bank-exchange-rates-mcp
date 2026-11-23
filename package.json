@@ -1,6 +1,6 @@
 {
   "name": "bank-exchange-rates-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpName": "com.allratestoday/bank-exchange-rates-mcp",
   "description": "MCP server for bank exchange rates: let Claude, Cursor and other AI agents fetch live buy and sell rates from 1,219 commercial banks in 124 countries (TT, cash and card boards), compare banks, and check spreads against the official central bank rate.",
   "keywords": [

@@ -97,7 +97,7 @@ Example `get_bank_rates` result (`country: "sg", bank: "dbs", ccy: "USD"`):
 
 - [bank-exchange-rates](https://www.npmjs.com/package/bank-exchange-rates): the same data as a TypeScript client ([GitHub](https://github.com/AllRates-Today/bank-exchange-rates))
 - [@allratestoday/mcp-server](https://www.npmjs.com/package/@allratestoday/mcp-server): real-time mid-market rates, official rates and bank rates in one MCP server
-- [@allratestoday/central-bank-mcp](https://www.npmjs.com/package/@allratestoday/central-bank-mcp): official rates from 130+ central banks and tax authorities
+- [@allratestoday/central-bank-mcp](https://www.npmjs.com/package/@allratestoday/central-bank-mcp): official rates from 120+ central banks and 50+ tax authorities
 - [Bank Exchange Rate API](https://allratestoday.com/bank-exchange-rate-api/): live bank boards, country by country
 
 ## 🔗 Links
